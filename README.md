@@ -21,20 +21,15 @@ Using with Vue
 
 ```vue
 <template>
-  <v-marquee style="width: 300px">
-    Parcel can take any type of file as an entry point, but a HTML or JavaScript
-    file is a good place to start. If you link your main JavaScript file in the
-    HTML using a relative path, Parcel will also process it for you, and replace
-    the reference with a URL to the output file.
-  </v-marquee>
+  <lazy-image style="max-width: 100%;" src="https://example.com/img.png" />
 </template>
 
 <script>
-import Marquee from "@axetroy/marquee/vue";
+import LazyImage from "@axetroy/lazy-image/vue";
 
 export default {
   components: {
-    "v-marquee": Marquee
+    "lazy-image": LazyImage
   }
 };
 </script>
@@ -44,18 +39,15 @@ Using in React
 
 ```jsx
 import React from "react";
-import Marquee from "@axetroy/marquee/react";
+import LazyImage from "@axetroy/lazy-image/react";
 
 class App extends React.Component {
   render() {
     return (
-      <Marquee style={{ width: 300 }}>
-        Parcel can take any type of file as an entry point, but a HTML or
-        JavaScript file is a good place to start. If you link your main
-        JavaScript file in the HTML using a relative path, Parcel will also
-        process it for you, and replace the reference with a URL to the output
-        file.
-      </Marquee>
+      <LazyImage
+        style={{ maxWidth: "100%" }}
+        src={"https://example.com/img.png"}
+      />
     );
   }
 }
