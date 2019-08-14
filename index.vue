@@ -3,7 +3,12 @@
     <h2>Vue Version</h2>
 
     <div>
-      <lazy-image style="max-width: 100%;" v-for="src in images" :key="src" :src="src" />
+      <lazy-image
+        v-for="src in images"
+        :key="src"
+        style="max-width: 100%;margin-bottom: 500px;"
+        :src="src"
+      />
     </div>
   </div>
 </template>

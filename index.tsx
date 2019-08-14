@@ -19,7 +19,11 @@ export default class App extends React.Component<AppPropsInfo, AppStateInfo> {
         <div>
           {images.map((src: string) => {
             return (
-              <LazyImage style={{ maxWidth: "100%" }} key={src} src={src} />
+              <LazyImage
+                style={{ maxWidth: "100%", marginBottom: 500 }}
+                key={src}
+                src={src}
+              />
             );
           })}
         </div>
