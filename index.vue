@@ -11,7 +11,7 @@
 <script lang="ts">
 import Vue from "vue";
 import LazyImage from "./vue/index.vue";
-import images from "./image2.json";
+import images from "./images2.json";
 
 export default Vue.extend({
   data() {
