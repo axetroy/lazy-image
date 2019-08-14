@@ -35,6 +35,19 @@ export default {
 </script>
 ```
 
+### Vue Props
+
+| Prop | Description   | Defaults    |
+| ---- | ------------- | ----------- |
+| src  | Image src url | `undefined` |
+
+### Vue Events
+
+| Prop   | Description                      |
+| ------ | -------------------------------- |
+| @enter | trigger when enter into viewport |
+| @leave | trigger when leave viewport      |
+
 Using in React
 
 ```jsx
@@ -53,13 +66,13 @@ class App extends React.Component {
 }
 ```
 
-### Props
+### React Props
 
-| Prop      | Description              | Defaults  |
-| --------- | ------------------------ | --------- |
-| src       | Image src url            | undefined |
-| onEnter() | when enter into viewport | undefined |
-| onLeave() | when leave viewport      | undefined |
+| Prop      | Description                      | Defaults    |
+| --------- | -------------------------------- | ----------- |
+| src       | Image src url                    | `undefined` |
+| onEnter() | trigger when enter into viewport | `undefined` |
+| onLeave() | trigger when leave viewport      | `undefined` |
 
 ## Browsers support
 
