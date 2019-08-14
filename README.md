@@ -55,9 +55,11 @@ class App extends React.Component {
 
 ### Props
 
-| Prop | Description   | Defaults  |
-| ---- | ------------- | --------- |
-| src  | Image src url | undefined |
+| Prop      | Description              | Defaults  |
+| --------- | ------------------------ | --------- |
+| src       | Image src url            | undefined |
+| onEnter() | when enter into viewport | undefined |
+| onLeave() | when leave viewport      | undefined |
 
 ## Browsers support
 

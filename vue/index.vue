@@ -35,6 +35,19 @@ export default Vue.extend({
       default: undefined
     }
   },
+  watch: {
+    inViewport(newVal, oldVal) {
+      if (newVal === oldVal) {
+        return;
+      }
+
+      if (newVal === true) {
+        this.$emit("enter");
+      } else {
+        this.$emit("leave");
+      }
+    }
+  },
   methods: {
     _triggerHandler() {
       const { img: $img } = this.$refs;

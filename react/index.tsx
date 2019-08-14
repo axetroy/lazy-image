@@ -11,6 +11,8 @@ export interface LazyImagePropsInfo {
   className?: string;
   style?: React.CSSProperties;
   src: string;
+  onEnter?(): void;
+  onLeave?(): void;
 }
 
 export interface LazyImageStateInfo {
@@ -61,6 +63,24 @@ class LazyImage extends React.Component<
     }
 
     handler && handler.cancel();
+  }
+
+  shouldComponentUpdate(
+    nextProps: LazyImagePropsInfo,
+    nextState: LazyImageStateInfo
+  ) {
+    const { onEnter, onLeave } = nextProps;
+    if (nextState.inViewport === true && this.state.inViewport === false) {
+      // enter the viewport
+      onEnter && onEnter();
+    } else if (
+      nextState.inViewport === false &&
+      this.state.inViewport === true
+    ) {
+      // leave the viewport
+      onLeave && onLeave();
+    }
+    return true;
   }
 
   _triggerHandler() {
