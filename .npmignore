@@ -1,0 +1,14 @@
+*.config.js
+*.vue
+*.tsx
+*.html
+tsconfig.json
+*.log
+.github
+yarn.lock
+bootstrap.jsx
+.travis.yml
+.cache
+doc
+dist
+renovate.json
