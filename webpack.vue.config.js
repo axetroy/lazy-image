@@ -17,12 +17,12 @@ const webpackConfig = {
   },
   resolve: {
     modules: ["node_modules"],
-    extensions: [".vue", ".js"]
+    extensions: [".vue", ".js", ".ts"]
   },
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.tsx?$/,
         loader: "ts-loader",
         options: { appendTsSuffixTo: [/\.vue$/] }
       },
