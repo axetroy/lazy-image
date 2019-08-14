@@ -13,3 +13,5 @@ doc
 dist
 renovate.json
 images*.json
+index.less
+util.ts
