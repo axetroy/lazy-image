@@ -18,7 +18,7 @@
     "@types/lodash.debounce": "4.0.6",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.8.5",
-    "@types/webpack": "4.32.2",
+    "@types/webpack": "4.39.0",
     "@vue/component-compiler-utils": "3.0.0",
     "less": "3.10.0",
     "parcel-bundler": "1.12.3",
