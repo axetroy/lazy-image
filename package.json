@@ -15,12 +15,12 @@
   },
   "devDependencies": {
     "@babel/polyfill": "7.4.4",
-    "@types/lodash.debounce": "^4.0.6",
-    "@types/react": "16.9.1",
+    "@types/lodash.debounce": "4.0.6",
+    "@types/react": "16.9.2",
     "@types/react-dom": "16.8.5",
-    "@types/webpack": "4.32.1",
+    "@types/webpack": "4.39.0",
     "@vue/component-compiler-utils": "3.0.0",
-    "less": "^3.9.0",
+    "less": "3.10.0",
     "parcel-bundler": "1.12.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
@@ -31,7 +31,7 @@
     "vue-hot-reload-api": "2.3.3",
     "vue-loader": "15.7.1",
     "vue-template-compiler": "2.6.10",
-    "webpack": "4.39.1",
+    "webpack": "4.39.2",
     "webpack-cli": "3.3.6"
   },
   "author": "",
@@ -42,6 +42,6 @@
     "vue": "^2.6.10"
   },
   "dependencies": {
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "4.0.8"
   }
 }
